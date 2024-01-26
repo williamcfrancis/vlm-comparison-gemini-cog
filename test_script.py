@@ -22,14 +22,14 @@ with open("./vlm_history.json", "w") as file:
 def append_to_markdown(file_path, image_path, image_resolution, gemini_response, gemini_duration, cogvlm_response, cogvlm_duration, text_query):
     with open(file_path, 'a') as md_file:
         md_file.write(f"## Test conducted on {image_path} (Resolution: {image_resolution[0]}x{image_resolution[1]})\n\n")
-        md_file.write(f"### Text Query: \"{text_query}\"\n\n")
         md_file.write(f"![Image]({image_path})\n\n")
+        md_file.write(f"### Text Query: \"{text_query}\"\n\n")
         md_file.write("### Google Gemini Pro Vision Response:\n")
         md_file.write(f"{gemini_response}\n")
-        md_file.write(f"**Time Taken:** {gemini_duration:.2f} seconds\n\n")
+        md_file.write(f"\n**Time Taken:** {gemini_duration:.2f} seconds\n\n")
         md_file.write("### CogVLM Response:\n")
         md_file.write(f"{cogvlm_response}\n")
-        md_file.write(f"**Time Taken:** {cogvlm_duration:.2f} seconds\n\n")
+        md_file.write(f"\n**Time Taken:** {cogvlm_duration:.2f} seconds\n\n")
 
 # For each test:
 image_path = './images/meal.png'  # Update this for each test
