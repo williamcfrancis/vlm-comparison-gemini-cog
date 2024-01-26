@@ -23,3 +23,19 @@ Meal prepping is a great way to ensure that you have healthy and nutritious meal
 
 **Time Taken:** 27.52 seconds
 
+## Test conducted on ./images/silly_painting.jpg (Resolution: 946x948)
+
+![Image](./images/silly_painting.jpg)
+
+### Text Query: "Whats peculiar about this painting? Can you describe it?"
+
+### Google Gemini Pro Vision Response:
+ It looks like the sky is on fire with bright red, orange, yellow, and pink colors. There is a volcano erupting with lava flowing down its side. There are two trees that are not affected by the volcano. There is a river in the foreground. The painting has a childlike quality to it, with simple shapes and bright colors.
+
+**Time Taken:** 4.45 seconds
+
+### CogVLM Response:
+The painting is peculiar because it depicts a scene that seems to be a mix of natural and abstract elements. There is a mountain with a bright orange flame at its peak, two trees with green leaves, a gray rock, and a blue river. However, the sky is filled with colorful, swirling patterns that do not resemble traditional clouds or atmospheric phenomena.
+
+**Time Taken:** 9.48 seconds
+

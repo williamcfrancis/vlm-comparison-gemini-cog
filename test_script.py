@@ -14,7 +14,7 @@ top_p=0.5
 top_k=1
 grounding=False
 cog_agent=False
-input_text="Write a short, engaging blog post based on this picture. It should include a description of the meal in the photo and talk about my journey meal prepping."
+input_text="Whats peculiar about this painting? Can you describe it?"
 with open("./vlm_history.json", "w") as file:
     json.dump([], file)
 
@@ -32,7 +32,7 @@ def append_to_markdown(file_path, image_path, image_resolution, gemini_response,
         md_file.write(f"\n**Time Taken:** {cogvlm_duration:.2f} seconds\n\n")
 
 # For each test:
-image_path = './images/meal.png'  # Update this for each test
+image_path = './images/silly_painting.jpg'  # Update this for each test
 img = PIL.Image.open(image_path)
 image_resolution = img.size  # Gets the resolution of the image
 
