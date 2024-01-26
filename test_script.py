@@ -19,9 +19,10 @@ with open("./vlm_history.json", "w") as file:
     json.dump([], file)
 
 # Define a function to write to a markdown file
-def append_to_markdown(file_path, image_path, image_resolution, gemini_response, gemini_duration, cogvlm_response, cogvlm_duration):
+def append_to_markdown(file_path, image_path, image_resolution, gemini_response, gemini_duration, cogvlm_response, cogvlm_duration, text_query):
     with open(file_path, 'a') as md_file:
         md_file.write(f"## Test conducted on {image_path} (Resolution: {image_resolution[0]}x{image_resolution[1]})\n\n")
+        md_file.write(f"### Text Query: \"{text_query}\"\n\n")
         md_file.write(f"![Image]({image_path})\n\n")
         md_file.write("### Google Gemini Pro Vision Response:\n")
         md_file.write(f"{gemini_response}\n")
@@ -74,4 +75,4 @@ else:
 
 # Write to Markdown
 markdown_file_path = 'README.md'
-append_to_markdown(markdown_file_path, image_path, image_resolution, gemini_response.text, gemini_duration, cogvlm_response, cogvlm_duration)
+append_to_markdown(markdown_file_path, image_path, image_resolution, gemini_response.text, gemini_duration, cogvlm_response, cogvlm_duration, input_text)
