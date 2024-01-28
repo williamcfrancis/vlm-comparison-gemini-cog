@@ -1,4 +1,4 @@
-# Google Gemini Pro Vision vs CogVLM: A Comparative Study
+# Google Gemini Vision vs CogVLM: A Comparative Study
 Welcome to our GitHub repository, where we conduct a comparative study of two advanced open-source Vision Language Models: Google Gemini Pro Vision and CogVLM. This project aims to evaluate and contrast their performance across various images.
 
 ## Repository Purpose
