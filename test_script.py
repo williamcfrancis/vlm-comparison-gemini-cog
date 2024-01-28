@@ -14,7 +14,11 @@ top_p=0.5
 top_k=1
 grounding=False
 cog_agent=False
-input_text="Whats peculiar about this painting? Can you describe it?"
+
+# Control panel:
+image_path = './images/underwater.JPG'  # Update this for each test
+input_text="How long will she survive in this position?"  # Update this for each test
+
 with open("./vlm_history.json", "w") as file:
     json.dump([], file)
 
@@ -31,8 +35,7 @@ def append_to_markdown(file_path, image_path, image_resolution, gemini_response,
         md_file.write(f"{cogvlm_response}\n")
         md_file.write(f"\n**Time Taken:** {cogvlm_duration:.2f} seconds\n\n")
 
-# For each test:
-image_path = './images/silly_painting.jpg'  # Update this for each test
+
 img = PIL.Image.open(image_path)
 image_resolution = img.size  # Gets the resolution of the image
 
