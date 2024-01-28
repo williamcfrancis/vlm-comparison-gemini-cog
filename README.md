@@ -202,7 +202,7 @@ The screenshot shows a webpage with a grid of images, each depicting a crossover
 
 ## Test conducted on ./images/handwriting.png (Resolution: 1709x1101)
 
-![Image](./images/handwriting.png)
+![Image](./images/handwriting.PNG)
 
 ### Text Query: "Can you read what's written on my note?"
 
