@@ -327,7 +327,7 @@ First, you need to find a real estate agency or a website that provides rental i
 
 ## Test conducted on ./images/underwater.JPG (Resolution: 2560x1440)
 
-![Image](./images/underwater.JPG)
+![Image](./images/underwater.jpg)
 
 ### Text Query: "How long will she survive in this position?"
 
